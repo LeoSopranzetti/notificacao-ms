@@ -1,11 +1,11 @@
 services:
   mysql:
-    container_name: 'guide-mysql'
+    container_name: 'mysql-notificacao-ms'
     image: 'mysql:latest'
     environment:
-      - 'MYSQL_DATABASE=mydatabase'
-      - 'MYSQL_PASSWORD=secret'
-      - 'MYSQL_ROOT_PASSWORD=verysecret'
-      - 'MYSQL_USER=myuser'
+      - 'MYSQL_DATABASE=notificacaodb'
+      - 'MYSQL_PASSWORD=123'
+      - 'MYSQL_ROOT_PASSWORD=123'
+      - 'MYSQL_USER=admin'
     ports:
       - '3306:3306'
